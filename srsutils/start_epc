@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "#-----------------------------------------------------------------------#"
+echo "The script it will run the virtual Evolved Packet Core "
+echo "#-----------------------------------------------------------------------#"
+
+cd ~/srsLTE/srsepc
+sudo srsepc epc.conf
+
+

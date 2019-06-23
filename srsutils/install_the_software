@@ -1,0 +1,32 @@
+#!/bin/bash
+
+echo "#-----------------------------------------------------------------------#"echo "This scrpt is installing the actual software for running the LTE - virtual Evolved Packet Core network"
+echo "#-----------------------------------------------------------------------#"
+
+mkdir build
+cd build
+cmake ../
+make
+make test
+sudo make install
+
+# This part of the code is automatically configure the network
+
+echo "#-----------------------------------------------------------------------#"
+echo "Now we handle the configuration of the virtual Evolved Packet Core"
+echo "#-----------------------------------------------------------------------#"
+cd ~/srsLTE
+# configuration of the virtual EPC and virtual HSS are copied to the specific location when the software is automatically read them
+cp srsepc/epc.conf.example srsepc/epc.conf
+cp srsepc/user_db.csv.example srsepc/user_db.csv
+
+echo "#-----------------------------------------------------------------------#"
+echo "Now we handle the configuration of the virtual Base Band Unit processing"
+echo "#-----------------------------------------------------------------------#"
+cp srsenb/enb.conf.example srsenb/enb.conf
+cp srsenb/rr.conf.example srsenb/rr.conf
+cp srsenb/sib.conf.example srsenb/sib.conf
+cp srsenb/drb.conf.example srsenb/drb.conf
+
+echo "#-----------------------------------------------------------------------#"echo "The program is now ready to run. Just execute the #bash script for each software module in a seperate terminal"
+echo "#-----------------------------------------------------------------------#"

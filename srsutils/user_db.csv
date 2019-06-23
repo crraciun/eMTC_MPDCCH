@@ -1,0 +1,18 @@
+#                                                                            
+# .csv to store UE's information in HSS                                      
+# Kept in the following format: "Name,IMSI,Key,OP_Type,OP,AMF,SQN,QCI"     
+#                                                                            
+# Name:    Human readable name to help distinguish UE's. Ignored by the HSS  
+# IMSI:    UE's IMSI value                                                   
+# Key:     UE's key, where other keys are derived from. Stored in hexadecimal
+# OP_Type: Operator's code type, either OP or OPc                            
+# OP/OPc:  Operator Code/Cyphered Operator Code, stored in hexadecimal       
+# AMF:     Authentication management field, stored in hexadecimal            
+# SQN:     UE's Sequence number for freshness of the authentication          
+# QCI:     QoS Class Identifier for the UE's default bearer.                 
+#                                                                            
+# Note: Lines starting by '#' are ignored and will be overwritten            
+ue3,901700000022950,0d1fe19b5d4c8e6ba4e995b255fbc975,op,25e26876efc9631ee10fd05eda1d0ec7,8000,000000001293,7
+ue4,901700000022952,c70215b4c630a4e681617702f19d8671,op,416d42d20c9c186d322710561d7412bf,8000,000000001310,7
+ue5,901700000022969,8baf473f2f8fd09487cccbd7097c6862,op,11111111111111111111111111111111,8000,000000013102,7
+ue6,208930000000005,8BAF473F2F8FD09487CCCBD7097C6862,opc,8E27B6AF0E692E750F32667A3B14605D,8000,000000013102,7

@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+	echo "#----------------------------#"
+	echo " This scrip is handle the UHD "
+	echo "#----------------------------#"
+	uhd_find_devices
+	echo "#----------------------------#"
+	echo "Now we handle the USRP parameters"
+	echo "#----------------------------#"
+	uhd_usrp_probe
+	echo "##############################"

@@ -1,0 +1,28 @@
+#!/bin/bash 
+echo " #----------------------------------------------------------------------#"
+echo " This file will automatically install the the requirement libraries to run the applications for BaseBandUnit Processing and virtual Evolved Packet Core"
+echo " #---------------------------------------------------------------------#"
+
+#Perform a update the package index
+sudo apt-get update
+
+#This line is installing most of the libraries necesary
+sudo apt-get install cmake libfftw3-dev libmbedtls-dev libboost-program-options-dev libconfig++-dev libsctp-dev -y
+
+#This line is installing the boost libraries
+sudo apt-get install libboost-all-dev -y
+
+#This line is installing the UHD driver for using the ETTUS USRP
+sudo apt-get install libuhd-dev libuhd003 uhd-host -y
+
+#This line is installing the Polarssl library
+sudo apt-get install libmbedtls10
+
+#This line is installing libpcsclite library
+sudo apt-get install libpcsclite-dev
+
+#This line is installing mklibs - Intel Math Kernel Library
+sudo apt-get install mklibs
+
+#This line is installing 
+

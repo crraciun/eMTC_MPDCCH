@@ -1,0 +1,12 @@
+
+
+Built in Release mode using commit 470953b on branch master.
+12:02:26.209156 [RF  ] [I] Starting UE
+12:02:30.256717 [RLC ] [W] Adding radio bearer SRB1 with mode AM
+12:02:30.256767 [RLC ] [W] SRB1 configured: t_poll_retx=80, poll_pdu=64, poll_byte=750000, max_retx_thresh=16, t_reordering=35, t_status_prohibit=0
+12:02:35.658045 [NAS ] [E] Timeout or received attach reject while trying to attach
+12:02:35.658069 [NAS ] [E] Could not attach in attach request
+12:02:38.884572 [PHY1] [E] [05794] Converting DCI message to UL grant
+12:02:50.013746 [PHY1] [W] [06684] Received invalid UL grant. L=14
+12:03:07.341773 [RF  ] [W] Underflow
+Closing log
